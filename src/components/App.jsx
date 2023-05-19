@@ -40,9 +40,9 @@ export const App = () => {
       .finally(() => {
         setLoader(false);
 
-        if (arrayImages.length) {
-          window.scrollBy(0, 255);
-        }
+        // if (arrayImages.length) {
+        //   window.scrollBy(0, 255);
+        // }
       });
   }, [imageName, page]);
 
