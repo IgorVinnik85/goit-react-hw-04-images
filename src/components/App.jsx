@@ -39,10 +39,6 @@ export const App = () => {
       .catch(er => setError(er))
       .finally(() => {
         setLoader(false);
-
-        // if (arrayImages.length) {
-        //   window.scrollBy(0, 255);
-        // }
       });
   }, [imageName, page]);
 
@@ -55,6 +51,10 @@ export const App = () => {
   const btnAddImages = () => {
     return setPage(prevState => prevState + 1);
   };
+
+  if (arrayImages.length) {
+    window.scrollBy(0, 255);
+  }
 
   return (
     <>
